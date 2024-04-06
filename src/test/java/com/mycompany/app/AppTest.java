@@ -33,7 +33,7 @@ public class AppTest {
     @Test
     public void testAppMain() {
         App.main(null);
-        String expectedOutput = "Hello World!!" + System.getProperty("line.separator");
+        String expectedOutput = "Hello World!!" + System.lineSeparator();
         assertEquals("Output doesn't match expected", expectedOutput, outContent.toString());
     }
 
